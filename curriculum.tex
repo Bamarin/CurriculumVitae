@@ -1,0 +1,76 @@
+% Righe di impostazioni per TeXworks e TeXstudio
+% !TEX encoding = UTF-8
+% !TEX program = pdflatex
+% !TEX spellcheck = it_IT
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{nicolas}
+
+% alcuni pacchetti standard
+\usepackage[english,italian]{babel} % solo se si scrive in italiano
+\usepackage[utf8]{inputenx}
+\usepackage[left=2cm,right=2cm,top=1.8cm,bottom=2.2cm]{geometry}
+%\usepackage{fontspec}
+
+\AfterPreamble{
+	\hypersetup{
+		colorlinks=true,
+		linkcolor=color1,
+		urlcolor=color1
+	}
+}
+% questa riga allarga la colonna di sinistra
+\setlength{\hintscolumnwidth}{3.7cm}
+
+% personal data
+\firstname{Nicolas}
+\familyname{Farabegoli}
+\title{Curriculum Vitae}
+\address{via Bagalona 599}{47032, Bertinoro (FC), Italy}
+\mobile{+39\,340 2876022}
+\email{nicolas.farabegoli@gmail.com}
+
+\definecolor{color3}{HTML}{333333}
+%\photo[70pt]{name.jpg}
+\quote{\color{color3}"Qualcosa di figo e accativante qui"}
+
+\begin{document}
+
+\vspace*{-2cm}
+\maketitle
+\vspace*{-1cm}
+
+\section{Informazioni personali}
+\cvline{Nome}{Nicolas}
+\cvline{Cognome}{Farabegoli}
+\cvline{Luogo e data di nascita}{Forlì (FC), 20 Ottobre 1997}
+\cvline{Nazionalità}{Italiana}
+
+\section{Istruzione e Formazione}
+
+\cventry{Set. 2016 -- presente}{Laurea triennale in Ingegneria e Scienze informatiche.\newline
+Università di Bologna, campus di Cesena}{}{Cesena (FC)}{}{Cia a tutti}
+\cvitem{Voto finale}{pending...}
+
+\cventry{Set. 2011 -- Lug. 2016}{Diploma in "Elettrotecnica ed Elettronica" articolazione Elettronica.\newline Istituto Tecnico Tecnologico B. Pascal}{}{Cesena (FC)}{}{Durante il percorso triennale si sono apprese le principali conoscienze riguardo l'elettronica digitale ed analogica e loro applicazioni. Sono stati realizzati semplici impianti civili, industriali ad alta potenza comandati da PLC.  }
+\cvitem{Voto finale}{90/100}
+
+\section{Competenze linguistiche}
+\cvline{\textbf{Italiano}}{Lingua madre}
+\cvline{\textbf{Inglese}}{Certificazione linguistica B1}
+\cvline{\textbf{Spagnolo}}{Livello scolastico, orale e scritto}
+
+\section{Competenze tecniche}
+
+\cvitem{Sistemi operativi}{Linux, MacOs, Microsoft Windows, iOS, Android}
+\cvitem{Linguaggi di programmazione}{C/C++, C\#, Java, Java 8, Java Android, Bash, Python, ASM (IA-32)}
+\cvitem{Linguaggi di Markup}{Markdown, RST, LaTeX}
+\cvitem{IDE}{Visual Studio, Eclipse, Android Studio, AutoCAD, PSoCreator, Arduino IDE, Mplab X, TIA Portal, Piattaforma mbed, Atmel Studio, Keil}
+\cvitem{Office Suite}{LibreOffice, Microsoft Office}
+\cvitem{Editor grafici}{Photoshop, Adobe Illustrator, GIMP}
+\cvitem{Browser}{Firefox, Chrome, Chromium, Safari}
+\cvitem{Altro}{Interesse nel mondo linux e ARM, oltre al mondo della microelettronica per scopi general purpose.}
+\end{document}
+
